@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FshaprLab1", "FsTest\FshaprLab1.fsproj", "{98D2BC64-75F5-4BE4-9EED-AE7C9474756C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{A687F0E0-7EE1-4C53-8993-63AE2969BF9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98D2BC64-75F5-4BE4-9EED-AE7C9474756C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D2BC64-75F5-4BE4-9EED-AE7C9474756C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D2BC64-75F5-4BE4-9EED-AE7C9474756C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D2BC64-75F5-4BE4-9EED-AE7C9474756C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A687F0E0-7EE1-4C53-8993-63AE2969BF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A687F0E0-7EE1-4C53-8993-63AE2969BF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A687F0E0-7EE1-4C53-8993-63AE2969BF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A687F0E0-7EE1-4C53-8993-63AE2969BF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79BF37BB-DBC9-4682-9408-0BDB6F7ED0F6}
+	EndGlobalSection
+EndGlobal

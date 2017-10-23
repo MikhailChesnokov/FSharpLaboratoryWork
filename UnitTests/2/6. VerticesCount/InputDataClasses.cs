@@ -13,7 +13,7 @@ namespace UnitTests.VerticesCount
             BinaryTree<int> tree = BinaryTree<int>.Empty;
             const int expected = 0;
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -28,7 +28,7 @@ namespace UnitTests.VerticesCount
                 );
             const int expected = 1;
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -44,7 +44,7 @@ namespace UnitTests.VerticesCount
                 1,
                 BinaryTree<int>.Empty);
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -62,7 +62,7 @@ namespace UnitTests.VerticesCount
                                               3,
                                               BinaryTree<int>.Empty));
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -78,7 +78,7 @@ namespace UnitTests.VerticesCount
                                               2,
                                               BinaryTree<int>.Empty));
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -98,7 +98,7 @@ namespace UnitTests.VerticesCount
                                               3,
                                               BinaryTree<int>.Empty));
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -124,7 +124,7 @@ namespace UnitTests.VerticesCount
                                                                             7,
                                                                             BinaryTree<int>.Empty)));
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }
@@ -154,7 +154,7 @@ namespace UnitTests.VerticesCount
                                                                             7,
                                                                             BinaryTree<int>.Empty)));
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }

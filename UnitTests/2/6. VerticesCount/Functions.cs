@@ -17,7 +17,7 @@ namespace UnitTests.VerticesCount
                 );
             const int expected = 1;
 
-            int result = countVertices(tree, 0);
+            int result = countVertices(0, tree);
 
             Assert.AreEqual(expected, result);
         }

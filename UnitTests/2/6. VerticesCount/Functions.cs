@@ -14,7 +14,7 @@ namespace UnitTests.VerticesCount
                 BinaryTree<int>.Empty,
                 1,
                 BinaryTree<int>.Empty
-                );
+            );
             const int expected = 1;
 
             int result = countVertices(0, tree);

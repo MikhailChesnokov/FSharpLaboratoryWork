@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static _1_1_SquareEquation;
+
 namespace UnitTests.SquareEquation
 {
     [TestClass]
@@ -10,7 +10,7 @@ namespace UnitTests.SquareEquation
         public void SimpleRealNumbers()
         {
             const double a = 1.0, b = 2.0, c = -3.0;
-            squareEquationRoots expected = squareEquationRoots.NewQuad(1,-3);
+            squareEquationRoots expected = squareEquationRoots.NewQuad(1, -3);
 
             squareEquationRoots result = solveSquareEquation(a, b, c);
 
@@ -42,7 +42,7 @@ namespace UnitTests.SquareEquation
         [TestMethod]
         public void NotRealNumbers()
         {
-            const double a = Double.PositiveInfinity, b = 0, c = 0;
+            const double a = double.PositiveInfinity, b = 0, c = 0;
             squareEquationRoots expected = squareEquationRoots.None;
 
             squareEquationRoots result = solveSquareEquation(a, b, c);
@@ -53,7 +53,7 @@ namespace UnitTests.SquareEquation
         [TestMethod]
         public void NaN()
         {
-            const double a = Double.NaN, b = 0, c = 0;
+            const double a = double.NaN, b = 0, c = 0;
             squareEquationRoots expected = squareEquationRoots.None;
 
             squareEquationRoots result = solveSquareEquation(a, b, c);

@@ -10,7 +10,7 @@ let a_double  : float = 2.0
 let a_float32 : float32 = 2.0f
 let a_int     : int = 2
 let a_uint    : uint32 = 2u
-let a_bigint  : BigInteger = 2I
+//let a_bigint  : BigInteger = 2I
 let a_decimal : decimal = 2m
 
 //Функции

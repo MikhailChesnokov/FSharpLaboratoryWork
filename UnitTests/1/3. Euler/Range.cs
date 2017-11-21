@@ -1,6 +1,7 @@
 ﻿using Microsoft.FSharp.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static _1_3_Euler;
+
 namespace UnitTests.Euler
 {
     [TestClass]

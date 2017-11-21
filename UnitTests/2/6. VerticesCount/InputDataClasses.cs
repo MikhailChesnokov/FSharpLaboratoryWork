@@ -25,7 +25,7 @@ namespace UnitTests.VerticesCount
                 BinaryTree<int>.Empty,
                 1,
                 BinaryTree<int>.Empty
-                );
+            );
             const int expected = 1;
 
             int result = countVertices(0, tree);
@@ -39,8 +39,8 @@ namespace UnitTests.VerticesCount
             const int expected = 2;
             BinaryTree<int> tree = BinaryTree<int>.NewBinaryTree(
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                              2,
-                                              BinaryTree<int>.Empty),
+                    2,
+                    BinaryTree<int>.Empty),
                 1,
                 BinaryTree<int>.Empty);
 
@@ -55,12 +55,12 @@ namespace UnitTests.VerticesCount
             const int expected = 3;
             BinaryTree<int> tree = BinaryTree<int>.NewBinaryTree(
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                              2,
-                                              BinaryTree<int>.Empty),
+                    2,
+                    BinaryTree<int>.Empty),
                 1,
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                              3,
-                                              BinaryTree<int>.Empty));
+                    3,
+                    BinaryTree<int>.Empty));
 
             int result = countVertices(0, tree);
 
@@ -75,8 +75,8 @@ namespace UnitTests.VerticesCount
                 BinaryTree<int>.Empty,
                 1,
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                              2,
-                                              BinaryTree<int>.Empty));
+                    2,
+                    BinaryTree<int>.Empty));
 
             int result = countVertices(0, tree);
 
@@ -89,14 +89,14 @@ namespace UnitTests.VerticesCount
             const int expected = 4;
             BinaryTree<int> tree = BinaryTree<int>.NewBinaryTree(
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            4,
-                                                                            BinaryTree<int>.Empty),
-                                              2,
-                                              BinaryTree<int>.Empty),
+                        4,
+                        BinaryTree<int>.Empty),
+                    2,
+                    BinaryTree<int>.Empty),
                 1,
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                              3,
-                                              BinaryTree<int>.Empty));
+                    3,
+                    BinaryTree<int>.Empty));
 
             int result = countVertices(0, tree);
 
@@ -109,20 +109,20 @@ namespace UnitTests.VerticesCount
             const int expected = 7;
             BinaryTree<int> tree = BinaryTree<int>.NewBinaryTree(
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            4,
-                                                                            BinaryTree<int>.Empty),
-                                              2,
-                                              BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            5,
-                                                                            BinaryTree<int>.Empty)),
+                        4,
+                        BinaryTree<int>.Empty),
+                    2,
+                    BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
+                        5,
+                        BinaryTree<int>.Empty)),
                 1,
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            6,
-                                                                            BinaryTree<int>.Empty),
-                                              3,
-                                              BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            7,
-                                                                            BinaryTree<int>.Empty)));
+                        6,
+                        BinaryTree<int>.Empty),
+                    3,
+                    BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
+                        7,
+                        BinaryTree<int>.Empty)));
 
             int result = countVertices(0, tree);
 
@@ -134,25 +134,26 @@ namespace UnitTests.VerticesCount
         {
             const int expected = 9;
             BinaryTree<int> tree = BinaryTree<int>.NewBinaryTree(
-                BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                                                          8,
-                                                                                                          BinaryTree<int>.Empty),
-                                                                            4,
-                                                                            BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                                                          9,
-                                                                                                          BinaryTree<int>.Empty)),
-                                              2,
-                                              BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            5,
-                                                                            BinaryTree<int>.Empty)),
+                BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(
+                            BinaryTree<int>.Empty,
+                            8,
+                            BinaryTree<int>.Empty),
+                        4,
+                        BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
+                            9,
+                            BinaryTree<int>.Empty)),
+                    2,
+                    BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
+                        5,
+                        BinaryTree<int>.Empty)),
                 1,
                 BinaryTree<int>.NewBinaryTree(BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            6,
-                                                                            BinaryTree<int>.Empty),
-                                              3,
-                                              BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
-                                                                            7,
-                                                                            BinaryTree<int>.Empty)));
+                        6,
+                        BinaryTree<int>.Empty),
+                    3,
+                    BinaryTree<int>.NewBinaryTree(BinaryTree<int>.Empty,
+                        7,
+                        BinaryTree<int>.Empty)));
 
             int result = countVertices(0, tree);
 

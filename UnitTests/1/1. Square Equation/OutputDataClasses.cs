@@ -32,7 +32,7 @@ namespace UnitTests.SquareEquation
         public void OneRoot()
         {
             const double a = 1, b = 2, c = 1;
-            squareEquationRoots expected = squareEquationRoots.NewQuad(-1,-1);
+            squareEquationRoots expected = squareEquationRoots.NewQuad(-1, -1);
 
             squareEquationRoots result = solveSquareEquation(a, b, c);
 
@@ -43,7 +43,7 @@ namespace UnitTests.SquareEquation
         public void TwoRoots()
         {
             const double a = 1, b = 2, c = -3;
-            squareEquationRoots expected = squareEquationRoots.NewQuad(1,-3);
+            squareEquationRoots expected = squareEquationRoots.NewQuad(1, -3);
 
             squareEquationRoots result = solveSquareEquation(a, b, c);
 

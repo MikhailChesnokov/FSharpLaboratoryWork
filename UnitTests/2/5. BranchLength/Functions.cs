@@ -13,7 +13,7 @@ namespace UnitTests.MaxBranchLength
                 BinaryTree<int>.Empty,
                 1,
                 BinaryTree<int>.Empty
-                );
+            );
             const int expected = 1;
 
             int result = getMaxBranchLength(tree, 0);

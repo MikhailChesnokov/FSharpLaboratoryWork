@@ -13,13 +13,13 @@ namespace UnitTests.Ferz
         public void IsCorrectArrangement()
         {
             const bool expected = false;
-            List<Tuple<int,int>> coords = new List<Tuple<int,int>>()
+            List<Tuple<int, int>> coords = new List<Tuple<int, int>>
             {
-                new Tuple<int, int>(6,2),
-                new Tuple<int, int>(7,1),
-                new Tuple<int, int>(3,3)
+                new Tuple<int, int>(6, 2),
+                new Tuple<int, int>(7, 1),
+                new Tuple<int, int>(3, 3)
             };
-            FSharpList<Tuple<int,int>> input = ListModule.OfSeq(coords);
+            FSharpList<Tuple<int, int>> input = ListModule.OfSeq(coords);
 
             bool result = isCorrectArrangement(input);
 

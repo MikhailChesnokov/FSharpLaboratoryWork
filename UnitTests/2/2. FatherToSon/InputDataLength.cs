@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.FSharp.Collections;
 using System.Collections.Generic;
+using Microsoft.FSharp.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static _2_2_FatherToSon;
 
@@ -9,16 +9,12 @@ namespace UnitTests.FatherToSon
     [TestClass]
     public class InputDataLength
     {
-
         [TestMethod]
         public void Zero()
         {
             string man = "A1";
-            SortedSet<string> expected = new SortedSet<string> {  };
-            List<Tuple<string, string>> CSarpPairs = new List<Tuple<string, string>>
-            {
-
-            };
+            SortedSet<string> expected = new SortedSet<string>();
+            List<Tuple<string, string>> CSarpPairs = new List<Tuple<string, string>>();
             FSharpList<Tuple<string, string>> FSarpPairs = ListModule.OfSeq(CSarpPairs);
 
             string result = printChildren(FSarpPairs, man, "");
@@ -31,7 +27,7 @@ namespace UnitTests.FatherToSon
         public void One()
         {
             string man = "A1";
-            SortedSet<string> expected = new SortedSet<string> { "B1" };
+            SortedSet<string> expected = new SortedSet<string> {"B1"};
             List<Tuple<string, string>> CSarpPairs = new List<Tuple<string, string>>
             {
                 new Tuple<string, string>("A1", "B1")
@@ -48,7 +44,7 @@ namespace UnitTests.FatherToSon
         public void Many()
         {
             string man = "A1";
-            SortedSet<string> expected = new SortedSet<string> { "B1", "B2" };
+            SortedSet<string> expected = new SortedSet<string> {"B1", "B2"};
             List<Tuple<string, string>> CSarpPairs = new List<Tuple<string, string>>
             {
                 new Tuple<string, string>("A1", "B1"),

@@ -76,8 +76,8 @@ namespace UnitTests.Euler
         [TestMethod]
         public void Large_1E6()
         {
-            const int n = 1000*1000 + 3;
-            FSharpOption<int> expected = new FSharpOption<int>(1000*1000+2);
+            const int n = 1000 * 1000 + 3;
+            FSharpOption<int> expected = new FSharpOption<int>(1000 * 1000 + 2);
 
             FSharpOption<int> result = euler(n);
 
@@ -88,7 +88,7 @@ namespace UnitTests.Euler
         public void ExtraLarge_1E7()
         {
             const int n = 1000 * 1000 * 10 + 19;
-            FSharpOption<int> expected = new FSharpOption<int>(1000*1000*10+18);
+            FSharpOption<int> expected = new FSharpOption<int>(1000 * 1000 * 10 + 18);
 
             FSharpOption<int> result = euler(n);
 

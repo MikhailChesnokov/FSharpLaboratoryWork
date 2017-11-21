@@ -9,7 +9,7 @@ namespace UnitTests.SquareEquation
         [TestMethod]
         public void n_n_n()
         {
-            const double a = 1,b = 2,c = -3;
+            const double a = 1, b = 2, c = -3;
             squareEquationRoots expected = squareEquationRoots.NewQuad(1, -3);
 
             squareEquationRoots result = solveSquareEquation(a, b, c);
